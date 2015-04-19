@@ -51,7 +51,7 @@ info: Increasing stack size by one page.
 Exiting @ tick 32866500 because target called exit()
 ```
 
-`build/ALPHA/gem5.opt configs/example/se.py -c queens_alpha1 -o "-a 4"`也能输出四皇后问题的全部两个解：
+`build/ALPHA/gem5.opt configs/example/se.py -c queens_alpha -o "-a 4"`也能输出四皇后问题的全部两个解：
 
 ```
 **** REAL SIMULATION ****
@@ -81,4 +81,6 @@ Exiting @ tick 16860500 because target called exit()
 
 
 ## 3.	流水线处理器的性能分析
+
+### 3.1.	Minor流水线结构
 
