@@ -14,4 +14,19 @@ Hello world!
 Exiting @ tick 3233000 because target called exit()
 ```
 
+## 2. 交叉编译
 
+### 2.1. 交叉编译器的安装使用
+
+通过`build/ALPHA/gem5.opt configs/example/se.py --cpu-type=minor --l1d_size=8kB --l1i_size=8kB --l1d_assoc=4 --l1i_assoc=4 --l2_size=1MB --l2_assoc=8 --cacheline_size=64 --cpu-clock=1GHz --num-cpus=1`设置参数，通过`build/ALPHA/gem5.opt configs/example/se.py -c queens_alpha -o 8`指定皇后个数为8并运行，得到正确结果92：
+
+```
+**** REAL SIMULATION ****
+info: Entering event queue @ 0.  Starting simulation...
+info: Increasing stack size by one page.
+8 queens on a 8x8 board...
+...there are 92 solutions
+Exiting @ tick 287907000 because target called exit()
+```
+
+### 2.2.	如何打印输出皇后在棋盘上的位置？简述你的方法并展示结果。
